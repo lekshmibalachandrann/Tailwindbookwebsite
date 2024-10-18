@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKSNEST</title>
+    <!-- font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+ <!-- google fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+ <style>
+     *{
+        font-family: "Acme", sans-serif;
+     }
+ </style>
+
+ <!--  tailwind css-->
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="w-full md:h-screen h-96 bg-[url('./images/bg.jpg')] bg-no-repeat bg-cover" >
+        <div class="w-full h-screen" style="background-color:rgba(0, 0, 0, 0.397);">
+     
+        <nav class="w-full p-6 bg-zinc-700 flex justify-center items-center">
+            <ul class="flex text-white flex justify-evenly w-full">
+               <a href=""><li class="md:text-xl text-xs hover:text-pink-300 hover:cursor-pointer">HOME</li></a>
+              <a href="#authors"><li class="md:text-xl text-xs hover:text-pink-300 hover:cursor-pointer">AUTHORS</li></a>
+            <a href="#bookshowcase"><li class="md:text-xl text-xs hover:text-pink-300 hover:cursor-pointer">BOOKS SHOWCASE</li></a>  
+                <a href="#audiobooks"><li class="md:text-xl text-xs hover:text-pink-300 hover:cursor-pointer">AUDIOBOOKS</li></a>
+            <a href="#about"><li class="md:text-xl text-xs hover:text-pink-300 hover:cursor-pointer">ABOUT</li></a>
+            </ul>
+        </nav>
+        <div class="home flex justify-center items-center w-full flex-col md:pt-72 pt-20">
+            <h1 class="text-white md:text-9xl text-6xl">BOOKSNEST</h1>
+            <p class="text-white text-xl mt-4 p-4 text-center">Find books that Fuel Your Imagination....</p>
+        </div>
+   </div>
+
+   <!-- Search-->
+
+   <div class=" search my-10 flex flex-col md:flex-row items-center justify-between border rounded-md p-2 bg-gray-100 w-full md:w-1/2 mx-auto">
+    <div class="flex items-center w-full md:w-1/2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search by Author/Title/Genre..." class="flex-grow p-2 bg-transparent outline-none text-gray-800">
+    </div>
+
+   
+</div>
+<!-- trendin-new-all time fav -->
+<div class="flex flex-wrap justify-center">
+    <div class="w-full md:w-1/3 p-4 relative">
+      <img src="./images/trending.jpg" alt="Image" class="w-full">
+      <a href="" class="absolute top-10 left-10 p-4 bg-slate-600 text-white">TRENDING</a>
+    </div>
+    <div class="w-full md:w-1/3 p-4 relative">
+      <img src="./images/NEW RELEASE.jpg" alt="Image" class="w-full">
+      <a href="" class="absolute top-10 left-10 p-4 bg-slate-600 text-white">LATEST RELEASES</a>
+
+    </div>
+    <div class="w-full md:w-1/3 p-4 relative">
+      <img src="./images/all time fav.webp" alt="Image" class="w-full">
+      <a href="" class="absolute top-10 left-10 p-4 bg-slate-600 text-white">ALL TIME FAVOURITE</a>
+
+    </div>
+  </div>
+
+  <!-- Authors -->
+  <div class="w-full flex justify-center items-center flex-col my-50" id="authors">
+    <h1 class="md:text-4xl my-20">AUTHORS</h1>
+    <div class="w-40 h-1 bg-black mb-4"></div>
+    <div class=" mt-20 md:px-40 md:grid grid-cols-3 w-full">
+      <div class="p-8">
+          
+     <a href=""><img src="./images/TOP AUTHORS.png" alt="no img" class="w-full max-h-56"></a> 
+      </div>
+      <div class="p-8">
+          <a href=""> <img src="./images/FEMALE AUTHORS.png" alt="no img" class="w-full max-h-56"></a>
+       
+        </div>
+        <div class="p-8">
+          <a href=""><img src="./images/ALL TIME FAV.png" alt="no img" class="w-full max-h-56"></a>
+          
+          </div>
+    </div>
+    </div>
+
+  <!-- Books showcase -->
+<div class="w-full flex justify-center items-center flex-col my-50" id="bookshowcase">
+  <h1 class="md:text-4xl my-20">BOOKS SHOWCASE</h1>
+  <div class="w-40 h-1 bg-black mb-4"></div>
+  
+  <div class=" mt-20 md:px-40 md:grid grid-cols-3 w-full">
+      <div class="p-8">
+          <a href="" class="hover:underline"><h1 class="text-3xl text-center mb-2">A good girl's guide to murder</h1></a>
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545494980i/40916679.jpg" alt="no img" class="w-full max-h-56">
+  <p class="mt-4 text-center">$220/- <br>Rating-4.5</p></div>
+
+      <div class="p-8">
+        <a href="" class="hover:underline"><h1 class="text-3xl text-center mb-2">Atomic Habits</h1></a>
+      <img src="https://images-eu.ssl-images-amazon.com/images/I/81F90H7hnML._AC_UL330_SR330,330_.jpg" alt="no img" class="w-full max-h-56">
+  <p class="mt-4 text-center">$300/- <br>Rating-4.8</p></div>
+
+      <div class="p-8">
+        <a href="" class="hover:underline"><h1 class="text-3xl text-center mb-2">Funny Story</h1></a>
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqCxtZFTVnhMikReGNougHFBC5ZLoUg7el_j9baPyMG4JWduHO" alt="no img" class="w-full max-h-56">
+  <p class="mt-4 text-center">$175/- <br>Rating-3.7</p></div>
+
+  <div class="p-8">
+    <a href="" class="hover:underline"><h1 class="text-3xl text-center mb-2">My Roommate is a Vampire </h1></a>
+<img src="https://m.media-amazon.com/images/I/81et+NlcUIL._SY466_.jpg" alt="no img" class="w-full max-h-56">
+<p class="mt-4 text-center">$200/- <br>Rating-3.8</p></div>
+<div class="p-8">
+<a href="" class="hover:underline"> <h1 class="text-3xl text-center mb-2">True Beauty</h1></a> 
+<img src="https://m.media-amazon.com/images/I/51IHmW+pfuL._SY445_SX342_.jpg" alt="no img" class="w-full max-h-56">
+<p class="mt-4 text-center">$990/- <br>Rating-4.1</p></div>
+<div class="p-8">
+  <a href="" class="hover:underline"><h1 class="text-3xl text-center mb-2">Ikigai</h1></a>
+<img src="https://m.media-amazon.com/images/I/51T8OXMiB5L._SY445_SX342_.jpg" alt="no img" class="w-full max-h-56">
+<p class="mt-4 text-center">$298/- <br>Rating-4.6</p></div>
+  </div>
+</div>
+    
+
+  <!-- Audio books -->
+  <div class="w-full flex justify-center items-center flex-col my-50" id="audiobooks">
+    <h1 class="md:text-4xl my-20">AUDIO BOOKS</h1>
+    <div class="w-40 h-1 bg-black mb-4"></div>
+    
+    <div class=" mt-20 md:px-40 md:grid grid-cols-3 w-full">
+        <div class="p-8">
+            <a href=""><h1 class="text-3xl text-center mb-2">The Psychology of Money</h1></a>
+        <img src="https://m.media-amazon.com/images/I/51BDnlOHmvL._SL500_.jpg" alt="no img" class="w-full max-h-56">
+    <p class="mt-4 text-center">$220/- <br>Rating-4.5 <br><i class="fa-solid fa-play"></i></p></div>
+  <div class="p-8">
+  <a href=""> <h1 class="text-3xl text-center mb-2">How to Talk to Anyone</h1></a> 
+  <img src="https://m.media-amazon.com/images/I/51hAGh15bTL._SL500_.jpg" alt="no img" class="w-full max-h-56">
+  <p class="mt-4 text-center">$990/- <br>Rating-4.1<br><i class="fa-solid fa-play"></i></p></div>
+  <div class="p-8">
+    <a href=""><h1 class="text-3xl text-center mb-2">Hyperfocus</h1></a>
+  <img src="https://m.media-amazon.com/images/I/51q79VOidaL._SL500_.jpg" alt="no img" class="w-full max-h-56">
+  <p class="mt-4 text-center">$323/- <br>Rating-4.6<br><i class="fa-solid fa-play"></i></p></div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="w-full bg-red-100 my-20 md:grid grid-cols-2" id="about">
+    <div class="md:px-40 px-10">
+        <div class="flex justify-center items-center flex-col my-10">
+            <h1 class="text-4xl ">ABOUT US</h1>
+            <div class="w-40 h-1 bg-black"></div></div>
+        
+    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aliquid maiores mollitia aspernatur ea voluptatibus aut autem, blanditiis quisquam voluptatum neque, adipisci a, quam quae? Ut ipsum nobis maiores atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quia eligendi maiores incidunt, dolores nisi fuga libero, accusantium quae ullam sit nostrum similique ipsum officia omnis placeat! Ratione, molestiae voluptas?</p>
+    <p  class="mt-10 text-justify pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, maxime quod alias ullam eius fugit. Rerum pariatur soluta ea, iure atque dolorem enim doloribus dignissimos repellat. Cupiditate error reiciendis quam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat asperiores et, doloremque reiciendis esse voluptates fugiat vel quam voluptas maiores, adipisci incidunt dicta soluta possimus illo excepturi, iure alias eaque.</p>
+</div>
+<div><img src="https://64.media.tumblr.com/0a202d9e7824670aa190c3b1a3719f8e/tumblr_p3quo4mC5X1wykjojo1_1280.jpg" alt="no img" class="w-full h-full"></div>
+
+</div>
+
+
+<footer>
+  <div class="bg-orange-100">
+    <div class="text-black p-4 flex flex-col md:flex-row justify-between items-center">
+      
+
+  <!-- Copyright Text -->
+  <div class="text-center sm:text-left mb-2 sm:mb-0">
+    <p class="text-black">© Copyright. All rights reserved | Designed by Lekshmi Balachandran</p>
+  </div>
+  
+  <!-- Social Media Icons -->
+  <div class="flex space-x-4 gap-10">
+    <a href="#">
+      <i class="fa-brands fa-x-twitter" style="color: #100101d8;"></i>
+    </a>
+    <a href="">  <i class="fa-brands fa-facebook" style="color: #100101d8;"></i></a>
+    <a href="#">
+      <i class="fa-brands fa-instagram" style="color: #100101d8;"></i>
+    </a>
+    
+  </div>
+</div>
+</div>
+  </footer>
+   
+</div>
+</body>
+</html>
